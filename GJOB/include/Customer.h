@@ -9,8 +9,7 @@ class Customer
 {
     public:
         //constructors
-        Customer(string name, int customerNum, double wallet);
-        //Customer(string name, int customerNum, double wallet, Order orders[]); todo
+        Customer(string name, int customerNum, double wallet, Order orders[]);
 
         //getters and setters
         void SetName(String name);
@@ -19,14 +18,14 @@ class Customer
         int GetNum();
         void SetWallet(double wallet);
         double GetWallet();
-        void SetOrders();//todo after orders implementation
-        //Order GetOrders();
+        void SetOrders();
+        Order[] GetOrders();
 
     protected:
         string name;
         int customerNum;
         double wallet;
-        //Order orders[];
+        Order orders[];
 };
 
 #endif // CUSTOMER_H

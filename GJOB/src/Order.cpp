@@ -3,8 +3,13 @@
 using namespace std;
 
 //constructors
-Order::Order(int orderNum, Date date, Customer customer, SalesAssoc salesAssoc) {
-    //todo
+Order::Order(int aOrderNum, Date aDate, Customer aCustomer, SalesAssoc aSalesAssoc, RobotModel aRobotModel, Status aStatus) {
+    SetNum(aOrderNum);
+    SetDate(aDate);
+    SetCustomer(aCustomer);
+    SetSalesAssoc(aSalesAssoc);
+    SetRobotModel(aRobotModel);
+    SetStatus(aStatus);
 }
 
 //setters and getters
@@ -37,7 +42,7 @@ SalesAssoc Order::GetSalesAssoc(){
 void Order::SetRobotModel(){
 
 }
-Order Order::GetRobotModel(){
+RobotModel Order::GetRobotModel(){
 
 }
 */

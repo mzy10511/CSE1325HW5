@@ -3,16 +3,11 @@
 using namespace std;
 
 //constructors
-SalesAssoc::SalesAssoc(string name, int employeeNum) {
-    SetName(name);
-    SetNum(employeeNum);
+SalesAssoc::SalesAssoc(string aName, int aEmployeeNum, Order aOrders[]) {
+    SetName(aName);
+    SetNum(aEmployeeNum);
+    SetOrders(aOrders);
 }
-
-/*todo after Orders implementation
-SalesAssoc::SalesAssoc(String name, int employeeNum, Order orders[]) {
-    //todo
-}
-*/
 
 //Setters and Getters
 void SalesAssoc::SetName(string aName) {
@@ -29,11 +24,10 @@ int SalesAssoc::GetNum() {
     return employeeNum;
 }
 
-/*todo after orders implementation
 void SalesAssoc::SetOrders(Order aOrders[]) {
     orders = aOrders;
 }
-Order SalesAssoc::GetOrders() {
+Order[] SalesAssoc::GetOrders() {
     return orders;
 }
-*/
+

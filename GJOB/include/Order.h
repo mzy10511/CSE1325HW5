@@ -1,7 +1,6 @@
 #ifndef ORDER_H
 #define ORDER_H
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -9,8 +8,7 @@ class Order
 {
     public:
         //constructors
-        Order(int orderNum, Date date, Customer customer, SalesAssoc salesAssoc);
-        //Order(int orderNum, Date date, Customer customer, SalesAssoc salesAssoc, RobotModel robotModel, Status status);
+        Order(int orderNum, Date date, Customer customer, SalesAssoc salesAssoc, RobotModel robotModel, Status status);
 
         //getters and setters
         void SetNum(int orderNum);
@@ -21,8 +19,8 @@ class Order
         Customer GetCustomer();
         void SetSalesAssoc(SalesAssoc salesAssoc);
         SalesAssoc GetSalesAssoc();
-        void SetRobotModel();//todo after RobotModel implementation
-        //Order GetRobotModel();
+        void SetRobotModel();
+        RobotModel GetRobotModel();
         void SetStatus(Status status);
         Status GetStatus();
 

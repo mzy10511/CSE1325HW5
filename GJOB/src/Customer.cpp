@@ -3,16 +3,9 @@
 using namespace std;
 
 //constructors
-Customer::Customer(string name, int customerNum, double wallet) {
+Customer::Customer(string aName, int aCustomerNum, double aWallet, Order aOrders[]) {
     //todo
 }
-
-
-/*todo after Orders implementation
-Customer::Customer(String name, int employeeNum, double wallet, Order orders[]) {
-    //todo
-}
-*/
 
 //Setters and Getters
 void Customer::SetName(string aName) {
@@ -36,12 +29,11 @@ int Customer::GetWallet() {
     return wallet;
 }
 
-/*todo after orders implementation
 void Customer::SetOrders(Order aOrders[]) {
     orders = aOrders;
 }
-Order Customer::GetOrders() {
+Order[] Customer::GetOrders() {
     return orders;
 }
-*/
+
 

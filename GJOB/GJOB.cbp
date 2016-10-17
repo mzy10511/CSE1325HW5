@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +34,27 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="Controller.cpp" />
+		<Unit filename="RobotPart.cpp" />
+		<Unit filename="RobotPart.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="include/Customer.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="include/Order.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="include/SalesAssoc.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="include/Shop.h">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="src/Customer.cpp" />
+		<Unit filename="src/Order.cpp" />
+		<Unit filename="src/SalesAssoc.cpp" />
+		<Unit filename="src/Shop.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
