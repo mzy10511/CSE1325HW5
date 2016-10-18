@@ -38,12 +38,11 @@ void Customer::SetWallet(double aWallet) {
 int Customer::GetWallet() {
     return wallet;
 }
-
+/*
 void Customer::SetOrders(Order aOrders[]) {
     orders = aOrders;
 }
 Order[] Customer::GetOrders() {
     return orders;
 }
-
-
+*/

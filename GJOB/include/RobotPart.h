@@ -1,6 +1,7 @@
 #ifndef __ROBOTPART_H
 #define __ROBOTPART_H
 #include <iostream>
+#include <vector>
 
 
 using namespace std;

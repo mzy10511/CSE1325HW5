@@ -1,7 +1,6 @@
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
 #include <iostream>
-#include "Order.h"
 
 using namespace std;
 
@@ -19,14 +18,14 @@ class Customer
         int GetNum();
         void SetWallet(double wallet);
         double GetWallet();
-        void SetOrders();
-        Order[] GetOrders();
+        //void SetOrders();
+        //Order[] GetOrders();
 
     protected:
         string name;
         int customerNum;
         double wallet;
-        Order orders[];
+        //Order orders[];
 };
 
 #endif // CUSTOMER_H

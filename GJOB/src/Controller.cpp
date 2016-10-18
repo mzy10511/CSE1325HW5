@@ -1,8 +1,7 @@
 #include <iostream>
-#include <vector>
 #include "RobotPart.h"
-#include "Customer.h"
-#include "SalesAssoc.h"
+//#include "Customer.h"
+//#include "SalesAssoc.h"
 #include "Order.h"
 #include "Shop.h"
 
