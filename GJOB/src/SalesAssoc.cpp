@@ -3,10 +3,9 @@
 using namespace std;
 
 //constructors
-SalesAssoc::SalesAssoc(string aName, int aEmployeeNum, Order aOrders[]) {
+SalesAssoc::SalesAssoc(string aName, int aEmployeeNum) {
     SetName(aName);
     SetNum(aEmployeeNum);
-    SetOrders(aOrders);
 }
 
 //Setters and Getters
@@ -23,11 +22,11 @@ void SalesAssoc::SetNum(int aEmployeeNum) {
 int SalesAssoc::GetNum() {
     return employeeNum;
 }
-
+/*
 void SalesAssoc::SetOrders(Order aOrders[]) {
     orders = aOrders;
 }
 Order[] SalesAssoc::GetOrders() {
     return orders;
 }
-
+*/

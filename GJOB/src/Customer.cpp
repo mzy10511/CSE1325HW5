@@ -8,12 +8,14 @@ Customer::Customer(string name, int customerNum, double wallet){
     SetNum(aCustomerNum);
     SetWallet(aWallet);
 }
+/*
 Customer::Customer(string aName, int aCustomerNum, double aWallet, Order aOrders[]) {
     SetName(aName);
     SetNum(aCustomerNum);
     SetWallet(aWallet);
     SetOrders(aOrders);
 }
+*/
 
 //Setters and Getters
 void Customer::SetName(string aName) {

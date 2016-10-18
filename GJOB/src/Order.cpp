@@ -3,12 +3,12 @@
 using namespace std;
 
 //constructors
-Order::Order(int aOrderNum, string aDate, Customer aCustomer, SalesAssoc aSalesAssoc, RobotModel aRobotModel, Status aStatus) {
+Order::Order(int aOrderNum, string aDate, Customer aCustomer, SalesAssoc aSalesAssoc, /*RobotModel aRobotModel,*/ string aStatus) {
     SetNum(aOrderNum);
     SetDate(aDate);
     SetCustomer(aCustomer);
     SetSalesAssoc(aSalesAssoc);
-    SetRobotModel(aRobotModel);
+    //SetRobotModel(aRobotModel);
     SetStatus(aStatus);
 }
 
@@ -37,13 +37,12 @@ void Order::SetSalesAssoc(SalesAssoc aSalesAssoc){
 SalesAssoc Order::GetSalesAssoc(){
     return salesAssoc;
 }
-
-/*todo after RobotModel implementation
-void Order::SetRobotModel(){
-
+/*
+void Order::SetRobotModel(RobotModel aRobotModel){
+    robotModel = aRobotModel;
 }
 RobotModel Order::GetRobotModel(){
-
+    return robotModel;
 }
 */
 void Order::SetStatus(Status aStatus){

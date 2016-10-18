@@ -8,7 +8,7 @@ class Order
 {
     public:
         //constructors
-        Order(int orderNum, string date, Customer customer, SalesAssoc salesAssoc, RobotModel robotModel, Status status);
+        Order(int orderNum, string date, Customer customer, SalesAssoc salesAssoc, /*RobotModel robotModel,*/ string status);
 
         //getters and setters
         void SetNum(int orderNum);
@@ -19,10 +19,10 @@ class Order
         Customer GetCustomer();
         void SetSalesAssoc(SalesAssoc salesAssoc);
         SalesAssoc GetSalesAssoc();
-        void SetRobotModel();
-        RobotModel GetRobotModel();
-        void SetStatus(Status status);
-        Status GetStatus();
+        //void SetRobotModel();
+        //RobotModel GetRobotModel();
+        void SetStatus(string status);
+        string GetStatus();
 
         //class methods
         double robotPrice();
@@ -33,11 +33,11 @@ class Order
 
     protected:
         int orderNum;
-        Date date;
+        string date;
         Customer customer;
         SalesAssoc salesAssoc;
         //RobotModel robotModel;
-        Status status;
+        string status;
 
 };
 

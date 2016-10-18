@@ -40,6 +40,9 @@
 		<Unit filename="include/Order.h">
 			<Option compile="1" />
 		</Unit>
+		<Unit filename="include/RobotPart.h">
+			<Option compile="1" />
+		</Unit>
 		<Unit filename="include/SalesAssoc.h">
 			<Option compile="1" />
 		</Unit>
@@ -50,9 +53,6 @@
 		<Unit filename="src/Customer.cpp" />
 		<Unit filename="src/Order.cpp" />
 		<Unit filename="src/RobotPart.cpp" />
-		<Unit filename="src/RobotPart.h">
-			<Option compile="1" />
-		</Unit>
 		<Unit filename="src/SalesAssoc.cpp" />
 		<Unit filename="src/Shop.cpp" />
 		<Extensions>
