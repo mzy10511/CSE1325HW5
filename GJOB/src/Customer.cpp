@@ -3,8 +3,16 @@
 using namespace std;
 
 //constructors
+Customer::Customer(string name, int customerNum, double wallet){
+    SetName(aName);
+    SetNum(aCustomerNum);
+    SetWallet(aWallet);
+}
 Customer::Customer(string aName, int aCustomerNum, double aWallet, Order aOrders[]) {
-    //todo
+    SetName(aName);
+    SetNum(aCustomerNum);
+    SetWallet(aWallet);
+    SetOrders(aOrders);
 }
 
 //Setters and Getters

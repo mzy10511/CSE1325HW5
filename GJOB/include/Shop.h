@@ -1,7 +1,7 @@
 #ifndef SHOP_H
 #define SHOP_H
 #include <iostream>
-#include <path.h>
+
 
 using namespace std;
 

@@ -34,11 +34,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Controller.cpp" />
-		<Unit filename="RobotPart.cpp" />
-		<Unit filename="RobotPart.h">
-			<Option compile="1" />
-		</Unit>
 		<Unit filename="include/Customer.h">
 			<Option compile="1" />
 		</Unit>
@@ -51,8 +46,13 @@
 		<Unit filename="include/Shop.h">
 			<Option compile="1" />
 		</Unit>
+		<Unit filename="src/Controller.cpp" />
 		<Unit filename="src/Customer.cpp" />
 		<Unit filename="src/Order.cpp" />
+		<Unit filename="src/RobotPart.cpp" />
+		<Unit filename="src/RobotPart.h">
+			<Option compile="1" />
+		</Unit>
 		<Unit filename="src/SalesAssoc.cpp" />
 		<Unit filename="src/Shop.cpp" />
 		<Extensions>

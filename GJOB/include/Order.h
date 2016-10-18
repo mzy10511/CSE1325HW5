@@ -8,13 +8,13 @@ class Order
 {
     public:
         //constructors
-        Order(int orderNum, Date date, Customer customer, SalesAssoc salesAssoc, RobotModel robotModel, Status status);
+        Order(int orderNum, string date, Customer customer, SalesAssoc salesAssoc, RobotModel robotModel, Status status);
 
         //getters and setters
         void SetNum(int orderNum);
         int GetNum();
-        void SetDate(Date date);
-        Date GetDate();
+        void SetDate(string date);
+        string GetDate();
         void SetCustomer(Customer customer);
         Customer GetCustomer();
         void SetSalesAssoc(SalesAssoc salesAssoc);

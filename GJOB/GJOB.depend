@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1476681349 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\controller.cpp
+	<iostream>
+	"RobotPart.h"
+
+1476681349 f:\uta\cse 1325\hw5\cse1325hw5\gjob\robotpart.h
+	<iostream>
+	<vector>
+

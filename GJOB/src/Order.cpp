@@ -3,7 +3,7 @@
 using namespace std;
 
 //constructors
-Order::Order(int aOrderNum, Date aDate, Customer aCustomer, SalesAssoc aSalesAssoc, RobotModel aRobotModel, Status aStatus) {
+Order::Order(int aOrderNum, string aDate, Customer aCustomer, SalesAssoc aSalesAssoc, RobotModel aRobotModel, Status aStatus) {
     SetNum(aOrderNum);
     SetDate(aDate);
     SetCustomer(aCustomer);
@@ -22,7 +22,7 @@ int Order::GetNum{
 void Order::SetDate(Date aDate){
     date = aDate;
 }
-Date Order::GetDate(){
+string Order::GetDate(){
     return date;
 }
 void Order::SetCustomer(Customer aCustomer){
