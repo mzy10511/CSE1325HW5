@@ -12,6 +12,7 @@ class Order
 {
     public:
         //constructors
+        Order();
         Order(int orderNum, string date, Customer customer, SalesAssoc salesAssoc, /*RobotModel robotModel,*/ string status);
 
         //getters and setters

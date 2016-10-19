@@ -1,6 +1,7 @@
 #ifndef SHOP_H
 #define SHOP_H
 #include <iostream>
+#include "Order.h"
 
 
 using namespace std;
@@ -9,30 +10,30 @@ class Shop
 {
     public:
         //constructors
-        Shop(Order orders[], RobotModel RobotModels[], Customer customers[], SalesAssoc salesAssoc[]);
+        Shop(Order orders[]/*, RobotModel RobotModels[]*/, Customer customers[], SalesAssoc salesAssoc[]);
 
         //setters and getters
         void SetOrders(Order orders[]);
-        Order[] GetOrders();
-        void SetRobotModels();//
-        RobotModel[] GetRobotModels;//
-        void SetCustomers();
-        Customer[] GetCustomers();
-        void SetSalesAssoc();
-        SalesAssoc[] GetSalesAssoc();
+        Order *GetOrders();
+        //void SetRobotModels();//
+        //RobotModel[] GetRobotModels;//
+        void SetCustomers(Customer *customers);
+        Customer *GetCustomers();
+        void SetSalesAssoc(SalesAssoc *salesAssoc);
+        SalesAssoc *GetSalesAssoc();
 
         //class methods
         void createRobotModel();
         void newCustomer();
         void placeOrder();
         //void run Report(Report report);
-        void saveData(Path aPath);
+        //void saveData(Path aPath);
 
     protected:
-        Order orders[];
+        Order *orders;
         //RobotModel robotModels[];
-        Customer customers[];
-        SalesAssoc salesAssoc[];
+        Customer *customers;
+        SalesAssoc *salesAssoc;
 };
 
 #endif // SHOP_H

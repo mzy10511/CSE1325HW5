@@ -3,15 +3,13 @@
 #include <iostream>
 #include <vector>
 
-
 using namespace std;
 
 enum PartType {arm = 1, battery = 2, torso = 3, head = 4, motor = 5};
 
 class Robotpart{
 public:
-    Robotpart(string sname, int pnum, double wei, double pr, string desc, PartType ptype)
-        : name(sname), partNum(pnum), weight(wei), price(pr), descript(desc), partType(ptype) {}
+    Robotpart() {}
     virtual string get_name();
     virtual int get_partNum();
     virtual double get_weight();
@@ -30,17 +28,26 @@ protected:
 
 class Arm : Robotpart{
 public:
-    Arm(string sname, int pnum, double wei, double pr, string desc, PartType ptype)
-        : Robotpart(sname, pnum, wei, pr, desc, ptype){}
+    Arm(){}
 
     int powerCost(int speed);
+    void set_arm_name(string fname);
+    void set_arm_partNum(int numb);
+    void set_arm_weight(double wei);
+    void set_arm_price(double pri);
+    void set_arm_description(string desc);
 
 };
 
 class Battery : Robotpart{
 public:
-    Battery(string sname, int pnum, double wei, double pr, string desc, PartType ptype, double ene, double maxp)
-        : Robotpart(sname, pnum, wei, pr, desc, ptype), energy(ene), maxPow(maxp){}
+    Battery(){}
+
+    void set_battery_name(string fname);
+    void set_battery_partNum(int numb);
+    void set_battery_weight(double wei);
+    void set_battery_price(double pri);
+    void set_battery_description(string desc);
 
     double get_energy();
     double get_maxpower();
@@ -52,14 +59,23 @@ private:
 
 class Head : Robotpart{
 public:
-    Head(string sname, int pnum, double wei, double pr, string desc, PartType ptype)
-        : Robotpart(sname, pnum, wei, pr, desc, ptype){}
+    Head(){}
+    void set_head_description(string desc);
+    void set_head_price(double pri);
+    void set_head_weight(double wei);
+    void set_head_partNum(int numb);
+    void set_head_name(string fname);
+
 };
 
 class Motor: Robotpart{
 public:
-    Motor(string sname, int pnum, double wei, double pr, string desc, PartType ptype, int maxS)
-        : Robotpart(sname, pnum, wei, pr, desc, ptype), maxSpeed(maxS){}
+    Motor(){}
+    void set_motor_name(string fname);
+    void set_motor_partNum(int numb);
+    void set_motor_weight(double wei);
+    void set_motor_price(double pri);
+    void set_motor_description(string desc);
 
     int get_maxS();
 
@@ -70,14 +86,20 @@ private:
 
 class Torso : Robotpart{
 public:
-    Torso(string sname, int pnum, double wei, double pr, string desc, PartType ptype, int batS)
-        : Robotpart(sname, pnum, wei, pr, desc, ptype), batterySlots(batS){}
+    Torso(){}
+    void set_torso_name(string fname);
+    void set_torso_partNum(int numb);
+    void set_torso_weight(double wei);
+    void set_torso_price(double pri);
+    void set_torso_description(string desc);
+
+    void set_batteryslots(int numb);
+    void set_arms(int numb);
+
 private:
     int batterySlots;
-    Head head;
-    vector<Arm> arms;
-    Motor motor;
-    vector<Battery> batteries;
+    int arms;
+
 };
 
 

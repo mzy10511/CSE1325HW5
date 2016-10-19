@@ -3,6 +3,7 @@
 using namespace std;
 
 //constructors
+SalesAssoc::SalesAssoc(){}
 SalesAssoc::SalesAssoc(string aName, int aEmployeeNum) {
     SetName(aName);
     SetNum(aEmployeeNum);

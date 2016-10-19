@@ -2,14 +2,14 @@
 
 using namespace std;
 
-Shop::Shop(Order orders[], RobotModel RobotModels[], Customer customers[], SalesAssoc salesAssoc[]){
+Shop::Shop(Order orders[]/*, RobotModel RobotModels[]*/, Customer customers[], SalesAssoc salesAssoc[]){
     //ctor
 }
 
-void Shop::SetOrders(Order aOrders[]){
+void Shop::SetOrders(Order *aOrders){
     orders = aOrders;
 }
-Shop::Order[] GetOrders(){
+Order *Shop::GetOrders(){
     return orders;
 }
 /*
@@ -18,16 +18,16 @@ void Shop::SetRobotModels(RobotModels aRobotModels[]){
 }
 RobotModel[] GetRobotModels;//
 */
-void Shop::SetCustomers(Customer aCustomers[]){
+void Shop::SetCustomers(Customer *aCustomers){
     customers = aCustomers;
 }
-Shop::Customer[] GetCustomers(){
+Customer *Shop::GetCustomers(){
     return customers;
 }
-void Shop::SetSalesAssoc(SalesAssoc aSalesAssoc[]){
+void Shop::SetSalesAssoc(SalesAssoc *aSalesAssoc){
     salesAssoc = aSalesAssoc;
 }
-Shop::SalesAssoc[] GetSalesAssoc(){
+SalesAssoc *Shop::GetSalesAssoc(){
     return salesAssoc;
 }
 
@@ -44,6 +44,6 @@ void placeOrder(){
 //void run Report(Report report){
     //todo
 //}
-void saveData(Path aPath){
+//void saveData(Path aPath){
     //todo
-}
+//}

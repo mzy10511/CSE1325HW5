@@ -3,7 +3,10 @@
 using namespace std;
 
 //constructors
-Customer::Customer(string name, int customerNum, double wallet){
+Customer::Customer(){
+    //
+}
+Customer::Customer(string aName, int aCustomerNum, double aWallet){
     SetName(aName);
     SetNum(aCustomerNum);
     SetWallet(aWallet);
@@ -35,7 +38,7 @@ int Customer::GetNum() {
 void Customer::SetWallet(double aWallet) {
     wallet = aWallet;
 }
-int Customer::GetWallet() {
+double Customer::GetWallet() {
     return wallet;
 }
 /*

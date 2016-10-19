@@ -8,6 +8,7 @@ class Customer
 {
     public:
         //constructors
+        Customer();
         Customer(string name, int customerNum, double wallet);
         //Customer(string name, int customerNum, double wallet, Order orders[]);
 

@@ -8,6 +8,7 @@ class SalesAssoc
 {
     public:
         //constructors
+        SalesAssoc();
         SalesAssoc(string name, int employeeNum);
 
         //Setters and Getters
