@@ -8,20 +8,21 @@ class SalesAssoc
 {
     public:
         //constructors
-        SalesAssoc(String name, int employeeNum, Order orders[]);
+        SalesAssoc();
+        SalesAssoc(string name, int employeeNum);
 
         //Setters and Getters
-        void SetName(String name);
+        void SetName(string name);
         string GetName();
         void SetNum(int employeeNum);
         int GetNum();
-        void SetOrders(Order orders[]);
-        Order[] GetOrders();
+        //void SetOrders(Order orders[]);
+        //Order[] GetOrders();
 
     protected:
         string name;
         int employeeNum;
-        Order orders[];
+        //Order orders[];
 };
 
 #endif // SALESASSOC_H

@@ -3,7 +3,8 @@
 using namespace std;
 
 //constructors
-Order::Order(int aOrderNum, Date aDate, Customer aCustomer, SalesAssoc aSalesAssoc, RobotModel aRobotModel, Status aStatus) {
+Order::Order(){}
+Order::Order(int aOrderNum, string aDate, Customer aCustomer, SalesAssoc aSalesAssoc, Robotmodel aRobotModel, string aStatus) {
     SetNum(aOrderNum);
     SetDate(aDate);
     SetCustomer(aCustomer);
@@ -16,13 +17,13 @@ Order::Order(int aOrderNum, Date aDate, Customer aCustomer, SalesAssoc aSalesAss
 void Order::SetNum(int aOrderNum){
     orderNum = aOrderNum;
 }
-int Order::GetNum{
+int Order::GetNum(){
     return orderNum;
 }
-void Order::SetDate(Date aDate){
+void Order::SetDate(string aDate){
     date = aDate;
 }
-Date Order::GetDate(){
+string Order::GetDate(){
     return date;
 }
 void Order::SetCustomer(Customer aCustomer){
@@ -38,18 +39,17 @@ SalesAssoc Order::GetSalesAssoc(){
     return salesAssoc;
 }
 
-/*todo after RobotModel implementation
-void Order::SetRobotModel(){
-
+void Order::SetRobotModel(Robotmodel aRobotModel){
+    robotModel = aRobotModel;
 }
-RobotModel Order::GetRobotModel(){
-
+Robotmodel Order::GetRobotModel(){
+    return robotModel;
 }
-*/
-void Order::SetStatus(Status aStatus){
+
+void Order::SetStatus(string aStatus){
     status = aStatus;
 }
-Status Order::GetStatus(){
+string Order::GetStatus(){
     return status;
 }
 
@@ -64,5 +64,10 @@ double Order::calcTax(){
     return 0;//todo
 }
 double Order::totalPrice(){
-    return 0;//todo
+    return robotModel.get_price() * orderNum;//todo
+}
+string Order::toString(){
+    string temp = " Order Num:" + orderNum;
+    string t2 =" Date:" + date + " Customer:" + customer.GetName() + " Sales Associate:" + salesAssoc.GetName() + " Robot Model:" + robotModel.get_name() + " Status:" + status;
+    return temp + t2;
 }
