@@ -4,7 +4,7 @@ using namespace std;
 
 //constructors
 Customer::Customer(){
-    //
+    //todo
 }
 Customer::Customer(string aName, int aCustomerNum, double aWallet){
     SetName(aName);

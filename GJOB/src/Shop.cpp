@@ -2,33 +2,65 @@
 
 using namespace std;
 
-Shop::Shop(Order orders[]/*, RobotModel RobotModels[]*/, Customer customers[], SalesAssoc salesAssoc[]){
+Shop::Shop(){
+    //todo
+}
+Shop::Shop(vector<Order> orders, vector<Robotmodel> robotModels, vector<Customer> customers, vector<SalesAssoc> salesAssocs){
     //ctor
 }
 
-void Shop::SetOrders(Order *aOrders){
-    orders = aOrders;
+void Shop::AddOrder(Order aOrder){
+    orders.push_back(aOrder);
 }
-Order *Shop::GetOrders(){
-    return orders;
+void Shop::SetOrders(vector<Order> aOrders){
+    orders.clear();
+    unsigned int i = 0;
+    for(;i<aOrders.size()-1; i++){
+        AddOrder(aOrders[i]);
+    }
 }
-/*
-void Shop::SetRobotModels(RobotModels aRobotModels[]){
-    robotModels = aRobotModels;
+vector<Order>* Shop::GetOrders(){
+    return &orders;
 }
-RobotModel[] GetRobotModels;//
-*/
-void Shop::SetCustomers(Customer *aCustomers){
-    customers = aCustomers;
+void Shop::AddRobotModel(Robotmodel aRobotModel){
+    robotModels.push_back(aRobotModel);
 }
-Customer *Shop::GetCustomers(){
-    return customers;
+void Shop::SetRobotModels(vector<Robotmodel> aRobotModels){
+    robotModels.clear();
+    unsigned int i = 0;
+    for(;i<aRobotModels.size()-1; i++){
+        AddRobotModel(aRobotModels[i]);
+    }
 }
-void Shop::SetSalesAssoc(SalesAssoc *aSalesAssoc){
-    salesAssoc = aSalesAssoc;
+vector<Robotmodel>* Shop::GetRobotModels(){
+    return &robotModels;
 }
-SalesAssoc *Shop::GetSalesAssoc(){
-    return salesAssoc;
+
+void Shop::AddCustomer(Customer aCustomer){
+    customers.push_back(aCustomer);
+}
+void Shop::SetCustomers(vector<Customer> aCustomers){
+    customers.clear();
+    unsigned int i = 0;
+    for(;i<aCustomers.size()-1; i++){
+        AddCustomer(aCustomers[i]);
+    }
+}
+vector<Customer>* Shop::GetCustomers(){
+    return &customers;
+}
+void Shop::AddSalesAssoc(SalesAssoc aSalesAssoc){
+    salesAssocs.push_back(aSalesAssoc);
+}
+void Shop::SetSalesAssocs(vector<SalesAssoc> aSalesAssocs){
+    salesAssocs.clear();
+    unsigned int i = 0;
+    for(;i<aSalesAssocs.size()-1; i++){
+        AddSalesAssoc(aSalesAssocs[i]);
+    }
+}
+vector<SalesAssoc>* Shop::GetSalesAssoc(){
+    return &salesAssocs;
 }
 
 //class methods

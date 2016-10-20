@@ -3,6 +3,7 @@
 #include "Customer.h"
 #include "SalesAssoc.h"
 #include <iostream>
+#include "RobotModel.h"
 
 
 
@@ -13,7 +14,7 @@ class Order
     public:
         //constructors
         Order();
-        Order(int orderNum, string date, Customer customer, SalesAssoc salesAssoc, /*RobotModel robotModel,*/ string status);
+        Order(int orderNum, string date, Customer customer, SalesAssoc salesAssoc, Robotmodel robotmodel, string status);
 
         //getters and setters
         void SetNum(int orderNum);
@@ -24,8 +25,8 @@ class Order
         Customer GetCustomer();
         void SetSalesAssoc(SalesAssoc salesAssoc);
         SalesAssoc GetSalesAssoc();
-        //void SetRobotModel();
-        //RobotModel GetRobotModel();
+        void SetRobotModel(Robotmodel robotModel);
+        Robotmodel GetRobotModel();
         void SetStatus(string status);
         string GetStatus();
 
@@ -41,7 +42,7 @@ class Order
         string date;
         Customer customer;
         SalesAssoc salesAssoc;
-        //RobotModel robotModel;
+        Robotmodel robotModel;
         string status;
 
 };

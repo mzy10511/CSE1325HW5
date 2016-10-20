@@ -10,10 +10,11 @@
 1476848234 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\customer.h
 	<iostream>
 
-1476848253 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\order.h
+1476926909 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\order.h
 	"Customer.h"
 	"SalesAssoc.h"
 	<iostream>
+	"RobotModel.h"
 
 1476848234 f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\customer.h
 	<iostream>
@@ -28,24 +29,28 @@
 1476848295 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\salesassoc.h
 	<iostream>
 
-1476848224 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\customer.cpp
+1476919620 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\customer.cpp
 	"Customer.h"
 
 1476848295 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\salesassoc.cpp
 	"SalesAssoc.h"
 
-1476849212 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\shop.h
+1476921605 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\shop.h
 	<iostream>
 	"Order.h"
+	<vector>
+	"RobotModel.h"
 
-1476848253 f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\order.h
+1476926909 f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\order.h
 	"Customer.h"
 	"SalesAssoc.h"
 	<iostream>
+	"RobotModel.h"
 
-1476812128 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\controller.cpp
+1476926583 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\controller.cpp
 	<iostream>
 	"RobotPart.h"
+	"RobotModel.h"
 	"Customer.h"
 	"SalesAssoc.h"
 	"Order.h"
@@ -55,16 +60,29 @@
 	<iostream>
 	<vector>
 
-1476849212 f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\shop.h
+1476921605 f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\shop.h
 	<iostream>
 	"Order.h"
+	<vector>
+	"RobotModel.h"
 
-1476848339 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\order.cpp
+1476926160 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\order.cpp
 	"Order.h"
 
 1476807382 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\robotpart.cpp
 	"RobotPart.h"
 
-1476849223 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\shop.cpp
+1476921946 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\shop.cpp
 	"Shop.h"
+
+1476926909 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\robotmodel.h
+	<iostream>
+	"RobotPart.h"
+
+1476926687 source:f:\uta\cse 1325\hw5\cse1325hw5\gjob\src\robotmodel.cpp
+	"RobotModel.h"
+
+1476926909 f:\uta\cse 1325\hw5\cse1325hw5\gjob\include\robotmodel.h
+	<iostream>
+	"RobotPart.h"
 

@@ -4,12 +4,12 @@ using namespace std;
 
 //constructors
 Order::Order(){}
-Order::Order(int aOrderNum, string aDate, Customer aCustomer, SalesAssoc aSalesAssoc, /*RobotModel aRobotModel,*/ string aStatus) {
+Order::Order(int aOrderNum, string aDate, Customer aCustomer, SalesAssoc aSalesAssoc, Robotmodel aRobotModel, string aStatus) {
     SetNum(aOrderNum);
     SetDate(aDate);
     SetCustomer(aCustomer);
     SetSalesAssoc(aSalesAssoc);
-    //SetRobotModel(aRobotModel);
+    SetRobotModel(aRobotModel);
     SetStatus(aStatus);
 }
 
@@ -38,14 +38,14 @@ void Order::SetSalesAssoc(SalesAssoc aSalesAssoc){
 SalesAssoc Order::GetSalesAssoc(){
     return salesAssoc;
 }
-/*
-void Order::SetRobotModel(RobotModel aRobotModel){
+
+void Order::SetRobotModel(Robotmodel aRobotModel){
     robotModel = aRobotModel;
 }
-RobotModel Order::GetRobotModel(){
+Robotmodel Order::GetRobotModel(){
     return robotModel;
 }
-*/
+
 void Order::SetStatus(string aStatus){
     status = aStatus;
 }
