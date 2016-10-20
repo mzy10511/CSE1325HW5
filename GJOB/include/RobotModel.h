@@ -6,7 +6,7 @@
 
 class Robotmodel{
 public:
-    Robotmodel();//MY
+    Robotmodel();
     Robotmodel(string fname, int mnum, double pri);
     void set_name(string fname);
     void set_price(double pri);

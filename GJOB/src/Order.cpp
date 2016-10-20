@@ -64,5 +64,10 @@ double Order::calcTax(){
     return 0;//todo
 }
 double Order::totalPrice(){
-    return 0;//todo
+    return robotModel.get_price() * orderNum;//todo
+}
+string Order::toString(){
+    string temp = " Order Num:" + orderNum;
+    string t2 =" Date:" + date + " Customer:" + customer.GetName() + " Sales Associate:" + salesAssoc.GetName() + " Robot Model:" + robotModel.get_name() + " Status:" + status;
+    return temp + t2;
 }

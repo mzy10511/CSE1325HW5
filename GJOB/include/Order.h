@@ -35,6 +35,7 @@ class Order
         double calcShipping();
         double calcTax();
         double totalPrice();
+        string toString();
 
 
     protected:
