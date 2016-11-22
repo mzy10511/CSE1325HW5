@@ -1,0 +1,16 @@
+﻿Build started 11/21/2016 6:39:07 PM.
+     1>Project "C:\Users\singh\OneDrive - University of Texas at Arlington\Cse 1325\Homework 6\HW6_master_11_20\HW6\HW6\HW6.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\singh\OneDrive - University of Texas at Arlington\Cse 1325\Homework 6\HW6_master_11_20\HW6\Debug\HW6.exe" /INCREMENTAL /NOLOGO fltk.lib wsock32.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcd.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\singh\OneDrive - University of Texas at Arlington\Cse 1325\Homework 6\HW6_master_11_20\HW6\Debug\HW6.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\singh\OneDrive - University of Texas at Arlington\Cse 1325\Homework 6\HW6_master_11_20\HW6\Debug\HW6.lib" /MACHINE:X86 /ENTRY:"mainCRTStartup" Debug\AddPart.obj
+         Debug\Customer.obj
+         Debug\RobotModel.obj
+         Debug\RobotParts.obj
+         Debug\main.obj
+         Debug\SalesAssoc.obj
+     1>RobotModel.obj : error LNK2019: unresolved external symbol __imp___CrtDbgReportW referenced in function "public: class Robotpart * & __thiscall std::vector<class Robotpart *,class std::allocator<class Robotpart *> >::operator[](unsigned int)" (??A?$vector@PAVRobotpart@@V?$allocator@PAVRobotpart@@@std@@@std@@QAEAAPAVRobotpart@@I@Z)
+     1>C:\Users\singh\OneDrive - University of Texas at Arlington\Cse 1325\Homework 6\HW6_master_11_20\HW6\Debug\HW6.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\singh\OneDrive - University of Texas at Arlington\Cse 1325\Homework 6\HW6_master_11_20\HW6\HW6\HW6.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.25
